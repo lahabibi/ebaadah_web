@@ -43,7 +43,6 @@ export default function Navbar() {
           console.log("GPS failed, using IP location");
 
           const ip = await getUserIPLocation();
-          console.log(ip);
           lat = ip.latitude;
           lon = ip.longitude;
           city = ip.city;
@@ -286,7 +285,7 @@ export default function Navbar() {
                     <a href="#">Home</a>
                   </li>
                   <li className="navbar-dropdown">
-                    <a href="#">Prayer Times</a>
+                    <a href="/prayer-times">Prayer Times</a>
                   </li>
                   <li className="navbar-dropdown">
                     <a href="#">Quran</a>
@@ -349,7 +348,7 @@ export default function Navbar() {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Prayer Times</a>
+              <a href="/prayer-times">Prayer Times</a>
             </li>
             <li className="menu-item-has-children">
               <a href="#">Quran</a>

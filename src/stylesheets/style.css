@@ -4608,3 +4608,83 @@ ul.photo-gallery figure:before,
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+
+.prayer-week-card {
+  background: white;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.prayer-week-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prayer-week-table thead {
+  background: #f5f8f6;
+}
+
+.prayer-week-table th {
+  padding: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2f3e3a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prayer-week-table td {
+  padding: 14px;
+  font-size: 15px;
+  color: #2c2c2c;
+}
+
+.prayer-week-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.prayer-week-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.today-row {
+  background: linear-gradient(
+    90deg,
+    rgba(36, 150, 94, 0.12) 0%,
+    rgba(36, 150, 94, 0.05) 100%
+  );
+  font-weight: 600;
+}
+
+.today-row td:first-child {
+  position: relative;
+  padding-left: 18px;
+}
+
+.today-row td:first-child::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 4px;
+  background: #24965e;
+  border-radius: 4px;
+}
+
+.prayer-week-table tbody tr:hover {
+  background: #f7faf8;
+  transition: 0.25s;
+}
+
+.prayer-week-table td:first-child {
+  font-weight: 600;
+  color: #1f2f2b;
+}
+
+.today-row td:first-child::before {
+  box-shadow: 0 0 8px rgba(36, 150, 94, 0.4);
+}

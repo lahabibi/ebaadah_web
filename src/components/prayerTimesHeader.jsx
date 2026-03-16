@@ -1,20 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
-import backImg from "../assets/images/hero-img-2.jpg";
-import man from "../assets/images/ayat-with-man.png";
-import playstore from "../assets/images/playstore.png";
-import applelogo from "../assets/images/apple-logo.png";
+import ayahwith from "../assets/images/ayat-with.jpg";
+import screen from "../assets/images/screen3.png";
 
 import { getPrayerData } from "../services/prayerService";
 import { getUserLocation } from "../utils/location";
 import { getUserIPLocation } from "../services/locationService";
 
-export default function HomePrayerTime() {
+export default function PrayerTimesHeader() {
   const [prayerTimes, setPrayerTimes] = useState({});
   const [hijriDate, setHijriDate] = useState("");
   const [nextPrayer, setNextPrayer] = useState("");
   const [nextPrayerTime, setNextPrayerTime] = useState("");
   const [countdown, setCountdown] = useState("");
-  const [, setLocation] = useState("");
+  const [location, setLocation] = useState("");
 
   const countdownRef = useRef(null);
 
@@ -179,112 +177,102 @@ export default function HomePrayerTime() {
     return `${newHour}:${minute} ${ampm}`;
   };
 
+  useEffect(() => {
+    return () => {
+      if (countdownRef.current) {
+        clearInterval(countdownRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
-      <div
-        className="hero-section two"
-        style={{ backgroundImage: `url(${backImg})` }}
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="hero-text">
-                <h1>For indeed, with hardship will be ease.</h1>
-                <p>
-                  O you who have believed, seek help through patience and
-                  prayer. Indeed, Allāh is with the patient.
-                </p>
-                <div className="store-buttons">
-                  <a
-                    href="#"
-                    className="btn appstore-btn"
-                    style={{ backgroundColor: "#fbc509" }}
-                  >
-                    <img src={applelogo} width={30} height={30} />
-                    Soon on AppStore
-                  </a>
-                  {"  "}
-                  <a
-                    href="#"
-                    className="btn playstore-btn"
-                    style={{
-                      backgroundColor: "#027d3b",
-                    }}
-                  >
-                    <img src={playstore} width={30} height={30} /> Soon on
-                    PlayStore
-                  </a>
+      <section class="islamic-ayat no-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="heading">
+                <p>Prayer Times In</p>
+                <h2>
+                  {location.city}, {location.country}
+                </h2>
+              </div>
+              <div className="namaz-timing-schedule">
+                <div className="namaz-timing-date">
+                  <h4>{hijriDate}</h4>
+                  <span>Next Prayer: {nextPrayer}</span>
+                  <h3>{formatTime(nextPrayerTime)}</h3>
+                  <span>{countdown}</span>
                 </div>
+                <ul className="namaz-timing-two">
+                  <li className="namaz-timing-heading">
+                    <span>Prayer</span>
+                    <span>Begins</span>
+                    <span>Jama’ah</span>
+                  </li>
+                  <li
+                    className={`timing-date ${
+                      nextPrayer === "Fajr" ? "active-prayer" : ""
+                    }`}
+                  >
+                    <span>Fajr</span>
+                    <span>{formatTime(prayerTimes.Fajr)}</span>
+                    <span>{formatTime(prayerTimes.Fajr)}</span>
+                  </li>
+                  <li
+                    className={`timing-date ${
+                      nextPrayer === "Dhuhr" ? "active-prayer" : ""
+                    }`}
+                  >
+                    <span>Zuhr</span>
+                    <span>{formatTime(prayerTimes.Dhuhr)}</span>
+                    <span>{formatTime(prayerTimes.Dhuhr)}</span>
+                  </li>
+                  <li
+                    className={`timing-date ${
+                      nextPrayer === "Asr" ? "active-prayer" : ""
+                    }`}
+                  >
+                    <span>Asr</span>
+                    <span>{formatTime(prayerTimes.Asr)}</span>
+                    <span>{formatTime(prayerTimes.Asr)}</span>
+                  </li>
+                  <li
+                    className={`timing-date ${
+                      nextPrayer === "Maghrib" ? "active-prayer" : ""
+                    }`}
+                  >
+                    <span>Maghrib</span>
+                    <span>{formatTime(prayerTimes.Maghrib)}</span>
+                    <span>{formatTime(prayerTimes.Maghrib)}</span>
+                  </li>
+                  <li
+                    className={`timing-date ${
+                      nextPrayer === "Isha" ? "active-prayer" : ""
+                    }`}
+                  >
+                    <span>Isha</span>
+                    <span>{formatTime(prayerTimes.Isha)}</span>
+                    <span>{formatTime(prayerTimes.Isha)}</span>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="hero-img two">
-                <img src={man} alt="hero-img" />
-                <div className="namaz-timing-schedule">
-                  <div className="namaz-timing-date">
-                    <h4>{hijriDate}</h4>
-                    <span>Next Prayer: {nextPrayer}</span>
-                    <h3>{formatTime(nextPrayerTime)}</h3>
-                    <span>{countdown}</span>
-                  </div>
-                  <ul className="namaz-timing-two">
-                    <li className="namaz-timing-heading">
-                      <span>Prayer</span>
-                      <span>Begins</span>
-                      <span>Jama’ah</span>
-                    </li>
-                    <li
-                      className={`timing-date ${
-                        nextPrayer === "Fajr" ? "active-prayer" : ""
-                      }`}
-                    >
-                      <span>Fajr</span>
-                      <span>{formatTime(prayerTimes.Fajr)}</span>
-                      <span>{formatTime(prayerTimes.Fajr)}</span>
-                    </li>
-                    <li
-                      className={`timing-date ${
-                        nextPrayer === "Dhuhr" ? "active-prayer" : ""
-                      }`}
-                    >
-                      <span>Zuhr</span>
-                      <span>{formatTime(prayerTimes.Dhuhr)}</span>
-                      <span>{formatTime(prayerTimes.Dhuhr)}</span>
-                    </li>
-                    <li
-                      className={`timing-date ${
-                        nextPrayer === "Asr" ? "active-prayer" : ""
-                      }`}
-                    >
-                      <span>Asr</span>
-                      <span>{formatTime(prayerTimes.Asr)}</span>
-                      <span>{formatTime(prayerTimes.Asr)}</span>
-                    </li>
-                    <li
-                      className={`timing-date ${
-                        nextPrayer === "Maghrib" ? "active-prayer" : ""
-                      }`}
-                    >
-                      <span>Maghrib</span>
-                      <span>{formatTime(prayerTimes.Maghrib)}</span>
-                      <span>{formatTime(prayerTimes.Maghrib)}</span>
-                    </li>
-                    <li
-                      className={`timing-date ${
-                        nextPrayer === "Isha" ? "active-prayer" : ""
-                      }`}
-                    >
-                      <span>Isha</span>
-                      <span>{formatTime(prayerTimes.Isha)}</span>
-                      <span>{formatTime(prayerTimes.Isha)}</span>
-                    </li>
-                  </ul>
-                </div>
+            <div class="col-lg-6" style={{ position: "relative" }}>
+              <div class="ayat-img">
+                <img
+                  src={screen}
+                  width={500}
+                  height={650}
+                  alt="img"
+                  style={{ position: "absolute", bottom: 0, right: 0 }}
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <img src={ayahwith} class="ayat-with-img" alt="ayat-with" />
+      </section>
     </>
   );
 }

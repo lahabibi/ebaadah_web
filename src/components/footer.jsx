@@ -4,6 +4,7 @@ import logo from "../assets/images/logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillTikTok } from "react-icons/ai";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -158,39 +159,39 @@ export default function Footer() {
                 <h3>Quick Links</h3>
                 <ul>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
-                    <a href="#">Prayer Times</a>
+                    <FaChevronRight />
+                    <a href="/prayer-times">Prayer Times</a>
                   </li>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="#">Quran</a>
                   </li>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="#">Ramadan</a>
                   </li>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="our-events.html">About Us</a>
                   </li>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="#">Contact Us</a>
                   </li>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="#">Donate</a>
                   </li>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="#">Who We Are</a>
                   </li>
                   <li>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="#">Quran Audio</a>
                   </li>
                   <li className="pb-0">
-                    <i className="fa-solid fa-angle-right"></i>
+                    <FaChevronRight />
                     <a href="#">Sadaqqah</a>
                   </li>
                 </ul>
