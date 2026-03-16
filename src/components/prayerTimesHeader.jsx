@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ayahwith from "../assets/images/ayat-with.jpg";
-import screen from "../assets/images/screen3.png";
+import screen from "../assets/images/ebaadah-prayer-time.png";
 
 import { getPrayerData } from "../services/prayerService";
 import { getUserLocation } from "../utils/location";
@@ -264,14 +264,14 @@ export default function PrayerTimesHeader() {
                   src={screen}
                   width={500}
                   height={650}
-                  alt="img"
+                  alt="ebaadah prayer times"
                   style={{ position: "absolute", bottom: 0, right: 0 }}
                 />
               </div>
             </div>
           </div>
         </div>
-        <img src={ayahwith} class="ayat-with-img" alt="ayat-with" />
+        <img src={ayahwith} class="ayat-with-img" alt="quran ayah" />
       </section>
     </>
   );

@@ -17,8 +17,12 @@ export default function AboutUs() {
                 <h4>
                   <span>Established in</span> 2025
                 </h4>
-                <img src={si1} alt="img" />
-                <img className="to-ibadat-img" src={si2} alt="img" />
+                <img src={si1} alt="women accurate prayer time" />
+                <img
+                  className="to-ibadat-img"
+                  src={si2}
+                  alt="boy accurate prayer time"
+                />
               </div>
             </div>
             <div className="col-lg-5">

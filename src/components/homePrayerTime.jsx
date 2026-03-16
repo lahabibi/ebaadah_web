@@ -200,7 +200,12 @@ export default function HomePrayerTime() {
                     className="btn appstore-btn"
                     style={{ backgroundColor: "#fbc509" }}
                   >
-                    <img src={applelogo} width={30} height={30} />
+                    <img
+                      src={applelogo}
+                      width={30}
+                      height={30}
+                      alt="download adhan reminder app ios"
+                    />
                     Soon on AppStore
                   </a>
                   {"  "}
@@ -211,15 +216,20 @@ export default function HomePrayerTime() {
                       backgroundColor: "#027d3b",
                     }}
                   >
-                    <img src={playstore} width={30} height={30} /> Soon on
-                    PlayStore
+                    <img
+                      src={playstore}
+                      width={30}
+                      height={30}
+                      alt="download accurate prayer time app android"
+                    />{" "}
+                    Soon on PlayStore
                   </a>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="hero-img two">
-                <img src={man} alt="hero-img" />
+                <img src={man} alt="man worshiping at the right prayer time" />
                 <div className="namaz-timing-schedule">
                   <div className="namaz-timing-date">
                     <h4>{hijriDate}</h4>

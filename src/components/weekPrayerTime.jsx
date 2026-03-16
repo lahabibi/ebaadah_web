@@ -138,10 +138,10 @@ export default function WeekPrayerTime() {
               Get Our App Soon
             </a>
             <div class="join-our-img">
-              <img src={j1} alt="img" />
-              <img src={j2} alt="img" />
-              <img src={j3} alt="img" />
-              <img src={j4} alt="img" />
+              <img src={j1} alt="ebaadah salaat reminder" />
+              <img src={j2} alt="ebaadah salaat reminder" />
+              <img src={j3} alt="ebaadah salaat reminder" />
+              <img src={j4} alt="ebaadah salaat reminder" />
             </div>
           </div>
         </div>

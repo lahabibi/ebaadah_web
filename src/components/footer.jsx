@@ -15,7 +15,12 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-3 col-md-6">
                 <div className="footer-logo">
-                  <img alt="logo" src={logo} height={70} width={160} />
+                  <img
+                    alt="ebaadah quran & salaat reminder app"
+                    src={logo}
+                    height={70}
+                    width={160}
+                  />
                   <h3>A journey with the Quran.</h3>
                 </div>
               </div>
