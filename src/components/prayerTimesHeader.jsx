@@ -187,11 +187,11 @@ export default function PrayerTimesHeader() {
 
   return (
     <>
-      <section class="islamic-ayat no-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="heading">
+      <section className="islamic-ayat no-bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="heading">
                 <p>Prayer Times In</p>
                 <h2>
                   {location.city}, {location.country}
@@ -258,8 +258,8 @@ export default function PrayerTimesHeader() {
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6" style={{ position: "relative" }}>
-              <div class="ayat-img">
+            <div className="col-lg-6" style={{ position: "relative" }}>
+              <div className="ayat-img">
                 <img
                   src={screen}
                   width={500}
@@ -271,7 +271,7 @@ export default function PrayerTimesHeader() {
             </div>
           </div>
         </div>
-        <img src={ayahwith} class="ayat-with-img" alt="quran ayah" />
+        <img src={ayahwith} className="ayat-with-img" alt="quran ayah" />
       </section>
     </>
   );

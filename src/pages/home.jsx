@@ -6,7 +6,7 @@ import QuranQuote from "../components/quranQuote";
 import DonationMosque from "../components/donationMosque";
 import Footer from "../components/footer";
 import AppFeature from "../components/appFeature";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 import "../stylesheets/audioplayer.css";
 import "../stylesheets/bootstrap.min.css";
@@ -20,7 +20,7 @@ import "../stylesheets/style.css";
 export default function Home() {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Ebaadah – Islamic Prayer Times & Adhan Reminder App</title>
 
         <meta
@@ -38,7 +38,7 @@ export default function Home() {
           property="og:description"
           content="Daily Islamic prayer reminders and Adhan alerts."
         />
-      </Helmet>
+      </Helmet> */}
       <Navbar />
       <HomePrayerTime />
       <AboutUs />

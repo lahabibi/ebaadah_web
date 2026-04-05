@@ -12,12 +12,12 @@ import Navbar from "../components/navbar";
 import PrayerTimesHeader from "../components/prayerTimesHeader";
 import WeekPrayerTime from "../components/weekPrayerTime";
 import Footer from "../components/footer";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 export default function PrayerTimes() {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         {" "}
         <title>
           Prayer Times Today | Accurate Islamic Salah Times – Ebaadah
@@ -31,7 +31,7 @@ export default function PrayerTimes() {
           content="prayer times today, islamic prayer times, salah times, adhan times today, muslim prayer schedule, fajr dhuhr asr maghrib isha times"
         />{" "}
         <meta name="robots" content="index, follow" />{" "}
-        {/* Open Graph for social sharing */}{" "}
+
         <meta property="og:title" content="Prayer Times Today | Ebaadah" />{" "}
         <meta
           property="og:description"
@@ -43,7 +43,7 @@ export default function PrayerTimes() {
           property="og:image"
           content="https://ebaadah.com/images/prayer-times-preview.png"
         />{" "}
-        {/* Twitter preview */}{" "}
+
         <meta name="twitter:card" content="summary_large_image" />{" "}
         <meta name="twitter:title" content="Prayer Times Today | Ebaadah" />{" "}
         <meta
@@ -55,7 +55,7 @@ export default function PrayerTimes() {
           content="https://ebaadah.com/images/prayer-times-preview.png"
         />{" "}
         <link rel="canonical" href="https://ebaadah.com/prayer-times" />{" "}
-      </Helmet>
+      </Helmet> */}
       <Navbar />
       <PrayerTimesHeader />
       <WeekPrayerTime />

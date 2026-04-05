@@ -103,9 +103,9 @@ export default function Footer() {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <g
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                         fill="rgb(0,0,0)"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                       >
                         <path d="m9 10c-1.65685 0-3 1.3431-3 3v22c0 1.6569 1.34315 3 3 3h30c1.6569 0 3-1.3431 3-3v-17c0-.5523.4477-1 1-1s1 .4477 1 1v17c0 2.7614-2.2386 5-5 5h-30c-2.76142 0-5-2.2386-5-5v-22c0-2.7614 2.23858-5 5-5h22c.5523 0 1 .44772 1 1s-.4477 1-1 1z" />
                         <path d="m13.2929 16.2929c.3905-.3905 1.0237-.3905 1.4142 0l8.5858 8.5858c.3905.3905 1.0237.3905 1.4142 0l8.5858-8.5858c.3905-.3905 1.0237-.3905 1.4142 0s.3905 1.0237 0 1.4142l-8.5858 8.5858c-1.1716 1.1716-3.071 1.1716-4.2426 0l-8.5858-8.5858c-.3905-.3905-.3905-1.0237 0-1.4142z" />
@@ -177,15 +177,15 @@ export default function Footer() {
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="our-events.html">About Us</a>
+                    <a href="/">About Us</a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="#">Contact Us</a>
+                    <a href="/contact">Contact Us</a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="#">Donate</a>
+                    <a href="/donate">Donate</a>
                   </li>
                   <li>
                     <FaChevronRight />
@@ -197,7 +197,7 @@ export default function Footer() {
                   </li>
                   <li className="pb-0">
                     <FaChevronRight />
-                    <a href="#">Sadaqqah</a>
+                    <a href="/donate">Sadaqqah</a>
                   </li>
                 </ul>
               </div>

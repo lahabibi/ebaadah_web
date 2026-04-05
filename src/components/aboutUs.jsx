@@ -47,7 +47,7 @@ export default function AboutUs() {
                   <li>Send prayer reminders and Adhan notifications </li>
                   <li>Help Muslims stay consistent in their daily worship </li>
                 </ul>
-                <a href="#" className="btn">
+                <a href="/" className="btn">
                   Get Our App Soon
                 </a>
               </div>

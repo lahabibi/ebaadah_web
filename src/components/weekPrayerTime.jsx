@@ -123,10 +123,10 @@ export default function WeekPrayerTime() {
           </table>
         </div>
       </section>
-      <section class="gap">
-        <div class="container">
+      <section className="gap">
+        <div className="container">
           <div
-            class="join-our-community"
+            className="join-our-community"
             style={{ backgroundImage: `url(${colorbg})` }}
           >
             <h2>Serving the Umma, working in partnership</h2>
@@ -134,10 +134,10 @@ export default function WeekPrayerTime() {
               We believe that our primary role is to serve the needs of the
               local community
             </p>
-            <a href="#" class="btn">
+            <a href="#" className="btn">
               Get Our App Soon
             </a>
-            <div class="join-our-img">
+            <div className="join-our-img">
               <img src={j1} alt="ebaadah salaat reminder" />
               <img src={j2} alt="ebaadah salaat reminder" />
               <img src={j3} alt="ebaadah salaat reminder" />
