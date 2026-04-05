@@ -7,10 +7,19 @@ import DonationSuccess from "./pages/donationSuccess";
 import { ToastContainer } from "react-toastify";
 import Contact from "./pages/contact";
 import MessageSuccess from "./pages/messageSuccess";
+import Quran from "./pages/quran";
 
 import "./App.css";
+import "./stylesheets/audioplayer.css";
+import "./stylesheets/bootstrap.min.css";
+import "./stylesheets/jquery.fancybox.min.css";
+import "./stylesheets/nice-select.css";
+import "./stylesheets/owl.carousel.min.css";
+import "./stylesheets/owl.theme.default.min.css";
+import "./stylesheets/responsive.css";
+import "./stylesheets/style.css";
+
 import "react-toastify/dist/ReactToastify.css";
-import Quran from "./pages/quran";
 
 function App() {
   return (

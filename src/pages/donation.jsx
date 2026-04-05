@@ -5,15 +5,6 @@ import DonationMosque from "../components/donationMosque";
 import Footer from "../components/footer";
 // import { Helmet } from "react-helmet";
 
-import "../stylesheets/audioplayer.css";
-import "../stylesheets/bootstrap.min.css";
-import "../stylesheets/jquery.fancybox.min.css";
-import "../stylesheets/nice-select.css";
-import "../stylesheets/owl.carousel.min.css";
-import "../stylesheets/owl.theme.default.min.css";
-import "../stylesheets/responsive.css";
-import "../stylesheets/style.css";
-
 export default function Donation() {
   return (
     <>

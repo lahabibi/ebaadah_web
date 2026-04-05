@@ -47,7 +47,7 @@ export default function AppFeature() {
                     <li>Notification</li>
                     {/* <li>Reminder</li> */}
                   </ul>
-                  <a>Accurate Prayer Times</a>
+                  <a href="#">Accurate Prayer Times</a>
                   <div className="scholar-two">
                     <img src={clock} alt="accurate prayer time worldwide" />
                     <h4>
