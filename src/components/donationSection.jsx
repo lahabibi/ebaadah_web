@@ -49,7 +49,11 @@ export default function DonationSection() {
                   community.
                 </p>
                 <br />
-                <a href="/stripe-donate" className="btn">
+                <a
+                  href="/stripe-donate"
+                  className="btn"
+                  style={{ backgroundColor: "#fbc509" }}
+                >
                   Donate Now
                 </a>
               </div>

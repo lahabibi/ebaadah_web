@@ -45,7 +45,7 @@ const CheckoutForm = () => {
         payment_method: { card: elements.getElement(CardElement) },
       });
 
-      if (result.error) alert(result.error.message);
+      if (result.error) toast.error(result.error.message);
       else if (result.paymentIntent.status === "succeeded") {
         toast.success("Shukrann! \n Donation successful! BarakAllahu 💖");
         setTimeout(() => {

@@ -1,41 +1,26 @@
 import React from "react";
+
+import HomeSeo from "../seo/homeSeo";
 import Navbar from "../components/navbar";
-import HomePrayerTime from "../components/homePrayerTime";
+import Footer from "../components/footer";
 import AboutUs from "../components/aboutUs";
 import QuranQuote from "../components/quranQuote";
-import DonationMosque from "../components/donationMosque";
-import Footer from "../components/footer";
 import AppFeature from "../components/appFeature";
-// import { Helmet } from "react-helmet";
+import DonationMosque from "../components/donationMosque";
+import HomePrayerTime from "../components/homePrayerTime";
 
 export default function Home() {
   return (
     <>
-      {/* <Helmet>
-        <title>Ebaadah – Islamic Prayer Times & Adhan Reminder App</title>
-
-        <meta
-          name="description"
-          content="Ebaadah helps Muslims stay connected with daily prayer times, Adhan notifications, and Islamic reminders."
-        />
-
-        <meta
-          name="keywords"
-          content="prayer times app, adhan reminder app, islamic prayer app, muslim prayer reminder, quran prayer app, reading quran"
-        />
-
-        <meta property="og:title" content="Ebaadah App" />
-        <meta
-          property="og:description"
-          content="Daily Islamic prayer reminders and Adhan alerts."
-        />
-      </Helmet> */}
+      <HomeSeo />
       <Navbar />
-      <HomePrayerTime />
-      <AboutUs />
-      <QuranQuote />
-      <AppFeature />
-      <DonationMosque />
+      <main>
+        <HomePrayerTime />
+        <AboutUs />
+        <QuranQuote />
+        <AppFeature />
+        <DonationMosque />
+      </main>
       <Footer />
     </>
   );

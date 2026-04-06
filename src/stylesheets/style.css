@@ -4688,3 +4688,22 @@ ul.photo-gallery figure:before,
 .today-row td:first-child::before {
   box-shadow: 0 0 8px rgba(36, 150, 94, 0.4);
 }
+
+/* BottomBar.css or your global CSS */
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#res-cross {
+  background: transparent;
+  border: none;
+  color: #fff; /* change if needed */
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

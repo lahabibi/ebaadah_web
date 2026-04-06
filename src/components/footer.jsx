@@ -5,6 +5,9 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillTikTok } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const style = { textDecoration: "none" };
 
 export default function Footer() {
   return (
@@ -90,7 +93,9 @@ export default function Footer() {
                   </i>
                   <div>
                     <h5>Phone no:</h5>
-                    <a href="#">+233 (0) 5458 - 22539</a>
+                    <a style={style} href="#">
+                      +233 (0) 5458 - 22539
+                    </a>
                   </div>
                 </div>
                 <div className="contact-info">
@@ -115,7 +120,9 @@ export default function Footer() {
                   </i>
                   <div>
                     <h5>Email Address:</h5>
-                    <a href="#">info@ebaadah.com</a>
+                    <a style={style} href="#">
+                      info@ebaadah.com
+                    </a>
                   </div>
                 </div>
                 <div className="contact-info">
@@ -165,39 +172,57 @@ export default function Footer() {
                 <ul>
                   <li>
                     <FaChevronRight />
-                    <a href="/prayer-times">Prayer Times</a>
+                    <a style={style} href="/prayer-times">
+                      Prayer Times
+                    </a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="#">Quran</a>
+                    <a style={style} href="#">
+                      Quran
+                    </a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="#">Ramadan</a>
+                    <a style={style} href="#">
+                      Ramadan
+                    </a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="/">About Us</a>
+                    <a style={style} href="/">
+                      About Us
+                    </a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="/contact">Contact Us</a>
+                    <a style={style} href="/contact">
+                      Contact Us
+                    </a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="/donate">Donate</a>
+                    <a style={style} href="/donate">
+                      Donate
+                    </a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="#">Who We Are</a>
+                    <a style={style} href="#">
+                      Who We Are
+                    </a>
                   </li>
                   <li>
                     <FaChevronRight />
-                    <a href="#">Quran Audio</a>
+                    <a style={style} href="#">
+                      Quran Audio
+                    </a>
                   </li>
                   <li className="pb-0">
                     <FaChevronRight />
-                    <a href="/donate">Sadaqqah</a>
+                    <a style={style} href="/donate">
+                      Sadaqqah
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -206,15 +231,20 @@ export default function Footer() {
           <div className="wpo-lower-footer">
             <p>
               Copyright ©
-              <a href="#">
+              <a style={style} href="#">
                 <b>Ebaadah</b>
               </a>
               2026 . All rights reserved.
             </p>
             <div className="d-flex align-items-center">
-              <a href="#"> Terms and Conditions</a>
+              <a style={style} href="#">
+                {" "}
+                Terms and Conditions
+              </a>
               <div className="border"></div>
-              <a href="#">Privacy Policy</a>
+              <a style={style} href="#">
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>

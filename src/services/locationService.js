@@ -1,16 +1,30 @@
 import axios from "axios";
 
 const API_KEY = process.env.REACT_APP_IPREGISTRY_KEY;
+const IP_REGISTRY_BASE_URL = "https://api.ipregistry.co";
 
 export const getUserIPLocation = async () => {
-  const res = await axios.get(`https://api.ipregistry.co/?key=${API_KEY}`);
+  if (!API_KEY) {
+    throw new Error("Missing IP Registry API key.");
+  }
 
-  const data = res.data;
+  try {
+    const response = await axios.get(IP_REGISTRY_BASE_URL, {
+      params: {
+        key: API_KEY,
+      },
+      timeout: 10000,
+    });
 
-  return {
-    city: data.location.city,
-    country: data.location.country.name,
-    latitude: data.location.latitude,
-    longitude: data.location.longitude,
-  };
+    const data = response?.data;
+
+    return {
+      city: data?.location?.city || "",
+      country: data?.location?.country.name || "",
+      latitude: data?.location?.latitude || null,
+      longitude: data?.location?.longitude || null,
+    };
+  } catch (error) {
+    throw new Error("Failed to fetch location from IP.");
+  }
 };

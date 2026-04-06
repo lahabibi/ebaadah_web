@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import msjid from "../assets/images/masjid.png";
 
 export default function DonationMosque() {
@@ -12,9 +12,13 @@ export default function DonationMosque() {
                 Help ebaadah reach <span>Communities</span>
               </h3>
               <p>Your donations will help build more features for ebaadah.</p>
-              <a href="/stripe-donate" className="btn">
+              <Link
+                to="/stripe-donate"
+                className="btn"
+                style={{ backgroundColor: "#fbc509" }}
+              >
                 Donate Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

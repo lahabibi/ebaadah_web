@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import gallerybg from "../assets/images/gallery-bg.jpg";
 import ayatImg from "../assets/images/ayat-two.png";
 
@@ -8,8 +8,6 @@ export default function QuranQuote() {
       text: "O you who have believed, Seek help through patience and prayers.",
       ref: "Al-Baqarah (2): 153",
     },
-    // { text: "Indeed, Allah is with the patient.", ref: "Al-Baqarah (9): 153" },
-    // { text: "Verily, with hardship comes ease.", ref: "Al-Inshirah (94): 6" },
   ];
 
   const [current, setCurrent] = useState(0);

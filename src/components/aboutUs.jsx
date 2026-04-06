@@ -1,4 +1,3 @@
-import React from "react";
 import si1 from "../assets/images/ibadat-islamic-1.jpg";
 import si2 from "../assets/images/ibadat-islamic-2.jpg";
 

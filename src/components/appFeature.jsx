@@ -1,4 +1,3 @@
-import React from "react";
 import program from "../assets/images/program.png";
 import screen from "../assets/images/ebaadah-quran-app.png";
 import salat from "../assets/images/salat.jpeg";
@@ -7,6 +6,9 @@ import qurr from "../assets/images/qurr.jpeg";
 import mosq from "../assets/images/mosq.jpg";
 import adhan from "../assets/images/adhan.png";
 import koran from "../assets/images/koran.png";
+import { Link } from "react-router-dom";
+
+const style = { textDecoration: "none", color: "black" };
 
 export default function AppFeature() {
   return (
@@ -25,13 +27,6 @@ export default function AppFeature() {
                   height={650}
                   alt="ebaadah quran app & salaat reminder notification"
                 />
-                {/* <div className="program-time">
-                  <i className="fa-regular fa-clock"></i>
-                  <h5>
-                    26th Jumada-Al-Thani, 1445 Mon,
-                    <span>8th Jan, 2024 - London, UK</span>
-                  </h5>
-                </div> */}
               </div>
             </div>
             <div className="col-lg-6">
@@ -45,9 +40,10 @@ export default function AppFeature() {
                   <ul>
                     <li>Location Based Time</li>
                     <li>Notification</li>
-                    {/* <li>Reminder</li> */}
                   </ul>
-                  <a href="#">Accurate Prayer Times</a>
+                  <Link style={style} to="/">
+                    Accurate Prayer Times
+                  </Link>
                   <div className="scholar-two">
                     <img src={clock} alt="accurate prayer time worldwide" />
                     <h4>
@@ -65,7 +61,9 @@ export default function AppFeature() {
 
                     <li>Clean Uthmani Mushaf</li>
                   </ul>
-                  <a href="#">Your Quran Everywhere</a>
+                  <Link to="/" style={style}>
+                    Your Quran Everywhere
+                  </Link>
                   <div className="scholar-two">
                     <img src={koran} alt="ebaadah app" />
                     <h4>
@@ -83,7 +81,9 @@ export default function AppFeature() {
                     <li>Notification</li>
                     <li>Reminder</li>
                   </ul>
-                  <a href="#">5 Daily Prayers Adhan</a>
+                  <Link style={style} to="/">
+                    5 Daily Prayers Adhan
+                  </Link>
                   <div className="scholar-two">
                     <img src={adhan} alt="adhan notification" />
                     <h4>
