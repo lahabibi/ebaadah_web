@@ -4,6 +4,7 @@ import donation2 from "../assets/images/donation-img-2.jpg";
 import donation3 from "../assets/images/donation-img-3.jpg";
 
 export default function DonationHeader() {
+  const style = { textDecoration: "none", color: "#027d3b" };
   return (
     <>
       <div className="" style={{ marginTop: "50px" }}>
@@ -78,7 +79,9 @@ export default function DonationHeader() {
                     </i>
                   </div>
                   <div>
-                    <a href="#">Community</a>
+                    <a style={style} href="#">
+                      Community
+                    </a>
                     <p>
                       Ebaadah connects community through faith, prayer, and
                       shared spiritual growth.
@@ -427,7 +430,9 @@ export default function DonationHeader() {
                     </i>
                   </div>
                   <div>
-                    <a href="#">Education</a>
+                    <a style={style} href="#">
+                      Education
+                    </a>
                     <p>
                       Ebaadah promotes learning through Quran, guidance, and
                       daily knowledge.
@@ -606,7 +611,9 @@ export default function DonationHeader() {
                     </i>
                   </div>
                   <div>
-                    <a href="#">Donation</a>
+                    <a style={style} href="#">
+                      Donation
+                    </a>
                     <p>
                       Your donation helps Ebaadah team continue building
                       meaningful features daily.
