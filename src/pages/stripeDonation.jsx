@@ -22,7 +22,7 @@ export default function StripeDonation() {
           Support the Ebaadah Team
         </h1> */}
         <p>
-          Help us grow Ebaadah and provide better Islamic tools for the
+          Help us grow Ebaadah and provide better Islamic utility tools for the
           community.
         </p>
         <br />

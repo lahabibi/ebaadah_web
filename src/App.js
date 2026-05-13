@@ -2,6 +2,7 @@ import { ToastContainer } from "react-toastify";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home";
+import Qibla from "./pages/qibla";
 import Quran from "./pages/quran";
 import Contact from "./pages/contact";
 import Donation from "./pages/donation";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/message-success" element={<MessageSuccess />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/quran" element={<Quran />} />
+        <Route path="/qibla" element={<Qibla />} />
       </Routes>
       <ToastContainer position="bottom-right" />
     </>

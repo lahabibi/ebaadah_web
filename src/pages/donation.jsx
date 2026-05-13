@@ -17,11 +17,11 @@ export default function Donation() {
         />{" "}
         <meta
           name="keywords"
-          content="support ebaadah, donate islamic app, support muslim app, donation islamic app, help prayer app, islamic charity app"
+          content="support ebaadah, support ebaadah islamic app, support muslim app, donation islamic app, help prayer app, islamic charity app"
         />{" "}
         <meta name="robots" content="index, follow" />{" "}
      
-        <meta property="og:title" content="Support Ebaadah | Donate Today" />{" "}
+        <meta property="og:title" content="Support Ebaadah | support us Today" />{" "}
         <meta
           property="og:description"
           content="Help us grow Ebaadah and provide better Islamic tools for the community. Your support makes a difference."

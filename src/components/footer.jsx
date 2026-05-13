@@ -203,7 +203,7 @@ export default function Footer() {
                   <li>
                     <FaChevronRight />
                     <a style={style} href="/donate">
-                      Donate
+                      Support The App
                     </a>
                   </li>
                   <li>
@@ -221,7 +221,7 @@ export default function Footer() {
                   <li className="pb-0">
                     <FaChevronRight />
                     <a style={style} href="/donate">
-                      Sadaqqah
+                      Support Ebaadah
                     </a>
                   </li>
                 </ul>

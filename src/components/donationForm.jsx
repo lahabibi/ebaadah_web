@@ -132,7 +132,7 @@ const CheckoutForm = () => {
           fontWeight: "bold",
         }}
       >
-        {loading ? "Processing..." : "Donate Now"}
+        {loading ? "Processing..." : "Support The App"}
       </button>
     </form>
   );

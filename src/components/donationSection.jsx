@@ -54,7 +54,7 @@ export default function DonationSection() {
                   className="btn"
                   style={{ backgroundColor: "#fbc509" }}
                 >
-                  Donate Now
+                  Support The App
                 </a>
               </div>
             </div>

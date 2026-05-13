@@ -13,9 +13,9 @@ import { useNavbarData } from "../hooks/useNavbarData";
 export const NAV_LINKS = [
   { label: "Ebaadah", path: "/" },
   { label: "Prayer Times", path: "/prayer-times" },
-  { label: "Quran", path: "/quran", badge: "WIP" },
+  { label: "Qibla", path: "/qibla", badge: "WIP" },
   { label: "Blog", path: "#" },
-  { label: "Donate", path: "/donate" },
+  { label: "Support Us", path: "/donate" },
   { label: "Contact", path: "/contact" },
 ];
 

@@ -17,7 +17,7 @@ export default function DonationMosque() {
                 className="btn"
                 style={{ backgroundColor: "#fbc509" }}
               >
-                Donate Now
+                Support The App
               </Link>
             </div>
           </div>
