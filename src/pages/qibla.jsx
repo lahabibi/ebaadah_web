@@ -32,7 +32,7 @@ export default function Qibla() {
           {/* <Lottie animationData={successAnimation} style={{ height: 150 }} /> */}
 
           <h2 style={{ color: "#24965E", marginTop: "10px" }}>
-            The qibla section is being worked on!
+            The qibla section is being worked on!!
           </h2>
           <br />
           <br />
