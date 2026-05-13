@@ -81,7 +81,7 @@ export default function Navbar() {
             appstore and playstore. Contact us at info@ebaadah.com. | Ebaadah
             mobile app and website are currently under development. Some When
             ready app will be released on appstore and playstore. Contact us at
-            info@ebaadah.com.
+            info@ebaadah.com
           </p>
         </div>
       </div>
